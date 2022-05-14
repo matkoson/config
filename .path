@@ -1,0 +1,71 @@
+# export DISPLAY=:0 xclip -sel clip < ~/.ssh/id_rsa.pub
+# matkoson@192.168.1.5
+# export UBUNTU=matkoson@192.168.1.8
+# export UBUNTU=matkoson@192.168.0.181
+# export UBUNTU=matkoson@192.168.1.12
+export VIMLOC="/Users/matkoson/dev/configFiles/.vim"
+export EXT_DAT_DIR="/Volumes/TOSHIBA_DAT"
+export EXT_DEV_DIR="$EXT_DATDIR/dev"
+export DEV_DIR="/Users/matkoson/dev"
+export TREEDIR="/Users/matkoson/dev/repos/worktrees"
+# export UHCDIR="$DEVDIR/repos/mobile/uhc/uhc-ios"
+export ORGDIR="/Users/matkoson/Dropbox/orgmode"
+export RALLYDIR="$DEVDIR/repos/mobile/rally"
+# export UHCDIR="$DEVDIR/repos/mobile/uhc/uhc-new/uhc-react-native"
+export UHCDIR="$RALLYDIR/uhc/uhc-new/uhc-react-native"
+export DHWORGDIR="$ORGDIR/dhw"
+export VAC_BRANCH="main"
+export UHC_BRANCH="develoment"
+export DHWREPODIR="$TREEDIR/vaccine-passport/$VAC_BRANCH"
+
+export UHCREPODIR="$RALLYDIR/uhc/uhc-react-native"
+export MEGADIR="$RALLYDIR/megazord-ios"
+export ICLOUDDIR="/Users/matkoson/Library/Mobile Documents/com~apple~CloudDocs"
+# export DEVLOC="/Users/matkoson/dev"
+export UBUNTU=matkoson@matkosonserver.home
+export CLIP="pbcopy"
+export ANDROID_HOME=$HOME/Library/Android/sdk
+export PYTHONPATH=/usr/local/lib/python2.7/site-packages
+export EDITOR=nvim
+export GITHUB_TOKEN=e568dd6ef8447e46216aa7e55069a3b617884704
+export ORG_DIRECTORY="/Users/matkoson/orgmode"
+export ORGZLY_FILE_INDEX="/Users/matkoson/orgmode/0.org"
+export SYNCTHING_PORT='http://localhost:8384/#'
+
+export PATH=$PATH:$ANDROID_HOME/emulator
+export PATH=$PATH:$ANDROID_HOME/tools
+export PATH=$PATH:$ANDROID_HOME/tools/bin
+export PATH=$PATH:$ANDROID_HOME/platform-tools
+export PATH=$PATH:$ANDROID_HOME/platform-tools
+export PATH=$PATH:$HOME/dev/scripts
+export PATH=$PATH:$HOME/dev/scripts/android
+export PATH=$PATH:$HOME/dev/scripts/backup
+export PATH=$PATH:$HOME/dev/scripts/other
+export PATH=$PATH:$HOME/dev/scripts/utils
+export PATH=$PATH:$HOME/dev/scripts/utils/testUser
+export PATH=$PATH:$HOME/dev/scripts/yabai
+export PATH=$PATH:$HOME/dev/scripts/boot
+export PATH=$PATH:$HOME/dev/scripts/omni
+export PATH=$PATH:$HOME/dev/repos/utilities/xcode
+export PATH=$PATH:/usr/local/go/bin
+export PATH=$PATH:/usr/local/go/bin
+export PATH=$PATH:/usr/local/go/bin
+export PATH=$PATH:`pwd`/flutter/bin
+export PATH=$PATH:$HOME/.npm-global/bin
+# specify ruby path
+export PATH=$PATH:/usr/local/opt/ruby/bin
+export PATH=$PATH:$HOME/.gem/ruby/3.0.0/bin
+
+
+# it's supposed to help compilers find ruby 
+export CPPFLAGS=-I/usr/local/opt/ruby/include
+export LDFLAGS=-L/usr/local/opt/ruby/
+
+export GEM_HOME=$HOME/.gem
+export PATH=$GEM_HOME/bin:$PATH
+# omniAutomation-related scripts
+export PATH=$PATH:$HOME/dev/repos/omni/omniAutomation/scripts
+
+# dots loc
+export DOTS=~/dev/repos/configs/dotfiles
+

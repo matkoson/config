@@ -1,0 +1,422 @@
+# ALIASES ---------------------------------------------------------------------
+alias plural='cd $DEV_DIR/repos/pluralsight'
+alias ls='ls -lah'
+alias n='nvim'
+alias w='open -a "webstorm"'
+alias idea='open -a "Intellij IDEA Ultimate"'
+alias x='open -a Xcode'
+alias as='studio'
+# alias inj='open -na "IntelliJ IDEA.app"'
+alias y='yarn'
+alias path='n ~/.path'
+alias unmount_all_and_exit='unmount_all && exit'
+alias d=docker
+alias hcat='highlight -O ansi'
+alias u="npm run-script unit"
+alias i="npm run-script integration"
+alias vlc="alias vlc='/Applications/VLC.app/Contents/MacOS/VLC'"
+alias ytd='youtube-dl'
+alias finder='open .'
+alias search="fzf"
+
+# NAV
+alias dev='cd $DEV_DIR'
+alias extDev='cd $EXT_DEV_DIR'
+alias dat='cd $EXT_DAT_DIR'
+alias scripts='cd $EXT_DEV_DIR/scripts'
+alias screens='cd $DEV_DIR/screens'
+alias drop='cd ~/Dropbox'
+alias repos='cd $DEV_DIR/repos'
+alias omni='cd $DEV_DIR/repos/omni/omniAutomation'
+alias omniScript='$DEV_DIR/scripts/omni'
+alias trees='cd $TREEDIR'
+alias scr='cd $EXT_DEV_DIR/screens && clear'
+alias add='cd $EXT_DEV_DIR/screens/androidDevice && clear'
+alias ade='cd $EXT_DEV_DIR/screens/androidEmulator && clear'
+alias clip='cd $EXT_DEV_DIR/screens/clip && clear'
+alias rt='cd ~ && clear'
+alias gdrive='cd /Users/matkoson/Google\ Drive'
+alias cd='clear && cd'
+alias priv='cd ~/priv/'
+alias pko='cd /Users/matkoson/priv/leasing/pko'
+alias icloud='cd $ICLOUDDIR'
+
+# forwading
+alias forwardReactotron='ssh -fNT -R 9090:192.168.1.7:9090 matkoson@192.168.1.1'
+alias forwardFlip='ssh -fNT -R 8088:192.168.1.7:8088 matkoson@192.18.1.1'
+
+alias forwardFlipper='ssh -fNT -R 8088:192.168.1.7:8088 matkoson@192.168.1.1 && ssh -fNT -R 8089:192.168.1.7:8089 matkoson@192.168.1.1' 
+alias forwardFlipper='ssh -fNT -R 9922:192.168.1.1:9922 matkoson@matkoson-mbp.home' 
+alias forwardDevTools='ssh -fNT -R 8089:192.168.1.1:8089 matkoson@matkoson-mbp.home' 
+
+# local network
+alias localNetSts='arp -a'
+
+alias ex='clear && exec zsh'
+
+# tmux, primary session
+alias tmxp="tmux new -s mac-primary"
+alias tmxs="tmux new -s mac-secondary"
+alias tmk="tmux kill-session"
+alias tmxatt='tmux at -t'
+
+
+alias sshClip="netcat -klc "xclip -sel c" localhost 10009"
+alias sshServ="ssh -Y $UBUNTU"
+alias sshMbp="ssh -o StrictHostKeyChecking=no 192.168.1.1"
+# alias sshServ="ssh -Y matkoson@matkosonserver"
+alias sshServWithMouse="ssh -Y $UBUNTU x2x -north -to :1"
+alias rec='cd $EXT_DEV_DIR/screens/androidBoth/recordings'
+alias trashLoc='cd ~/.Trash'
+alias capture='e /Users/matkoson/orgmode/gtd/00.capture.org'
+alias testUser='testUser.sh'
+alias vlcStream='vlcStream.sh'
+
+alias uhc='cd $UHCREPODIR && clear'
+alias core='cd $UHCREPODIR/packages/core && clear'
+alias arc='cd $UHCREPODIR/packages/arcade && clear'
+
+alias vpBumpAndPatch='arc && yarn add @rally/vaccine-passport-mobile@x.xx && arc && yarn patch-package'
+
+CURRENT_VP_BRANCH=CVPT-66
+# Vaccine Passport
+alias vacOrg='cd $DHWORGDIR && clear'
+alias cpVp='cp -R module/ $RALLYDIR/uhc/uhc-react-native/packages/arcade/node_modules/@rally/vaccine-passport/src'
+alias vh='cd $RALLYDIR/uhc/uhc-react-native/packages/arcade/node_modules/@rally/vaccine-passport'
+alias vb='. setWorktreeBranch.sh'
+alias vbc='. setWorktreeBranch.sh $CURRENT_VP_BRANCH'
+alias replaceVpTar='mv rally-vaccine-passport-mobile-v1.0.0.tgz ~/dev/tars'
+alias gen='cge && yarn generate' 
+
+alias ivs='cd $DEV_DIR/repos/amazon/IVS'
+
+
+alias mb="cd ~/dev/repos/utilities/mbankBudgetConverter"
+
+DHWREPODIR="$DEV_DIR/repos/mobile/vaccine-passport"
+alias vac='cd $DHWREPODIR && clear'
+alias yl='yarn lint --quiet --fix'
+alias vace='cd $DHWREPODIR/example/mobile && clear'
+alias vam='cd $DEV_DIR/repos/mobile/vaccine-passport/packages/mobile'
+
+alias bro='cd $DEV_DIR/repos/rn/react-native-brownfield'
+alias yl='bro && yarn loop'
+alias pod='cd $DEV_DIR/repos/lib/bro/react-native-brownfield/example/RNExample/ios && pod install'
+alias broCopy='$DEV_DIR/repos/lib/bro/broCopy/react-native-brownfield'
+alias cge='cd $DEV_DIR/repos/lib/bro/react-native-brownfield/examples/codegen'
+alias clb='cd $DEV_DIR/repos/lib/bro/react-native-brownfield/packages/cli'
+alias replaceCodegen='cg && cd .. && cp -r codegen ../examples/codegen/node_modules/@react-native-brownfield'
+alias ycp='cg && yarn clean && yarn prepare'
+
+alias pars='cd $DEV_DIR/repos/lib/bro/react-native-brownfield/packages/parser'
+alias asts='cd $DEV_DIR/repos/frontendMasters/asts-workshop'
+alias vacs='cd $DHWREPODIR/src && clear'
+alias mob='cd $DHWREPODIR/mobile && clear'
+alias mobd='cd $DHWREPODIR/mobile/dev-app && clear'
+alias web='cd $DHWREPODIR/web && clear'
+alias ysw='cd $DEV_DIR/repos/mobile/vaccine-passport/ && yarn start:web'
+alias ysm='cd $DEV_DIR/repos/mobile/vaccine-passport/ && yarn start:mobile'
+alias yav='cd $DEV_DIR/repos/mobile/vaccine-passport/ && yarn android'
+alias yiv='cd $DEV_DIR/repos/mobile/vaccine-passport/ && yarn ios'
+alias yf='yarn flow'
+alias ys='yarn start --reset-cache --verbose'
+alias yc='rm -rf node_modules && yarn'
+alias fmod='npx flow codemod annotate-exports --write --repeat --log-level info '
+alias yb='yarn build'
+
+
+
+
+
+alias mega='cd $MEGADIR && clear'
+alias yclean='uhc && yarn clean && yarn'
+alias uhcClean='uhc && yarn clean && yarn'
+alias uhcPods='cd $UHCREPODIR/packages/arcade/ios && pod install && uhc && yarn postinstall'
+# alias ys='clear && yarn start --reset-cache'
+# alias ya='clear && yarn a'
+# alias yt='uhc && yarn test'
+# alias ytb='uhc && yarn test -b'
+alias ypod='cd $UHCREPODIR/packages/arcade/ios && pod install && uhc && yarn postinstall'
+alias da='adb uninstall com.mobile.uhc.debug && clear'
+alias alia='n ~/.aliases'
+#
+# alias op='1p.sh'
+
+alias syncOrgIndex='python3 $EXT_DEV_DIR/repos/utilities/orgzly/orgzly-index-files/make_index.py'
+
+alias dat="cd /Volumes/TOSHIBA_DAT"
+
+alias rald="cd ~/Downloads/rally && clear"
+
+alias org='cd $ORGDIR'
+alias ideas='cd ~/orgmode/ideas'
+alias budget='cd ~/orgmode/budget'
+alias budget='cd ~/orgmode/budget'
+alias orgList='org && find . -d | grep "./*[^.org]$"'
+alias vim='nvim -w ~/.vimlog "$@"'
+alias mvim='mvim -w ~/.vimlog "$@"'
+
+# list usb connections
+alias listUsb='lsblk'
+# list open ports
+alias listListPorst='sudo lsof -i -P -n | grep LISTEN'
+
+
+# configs
+alias nconf='nvim ~/.config/nvim/init.vim'
+alias iconf='nvim ~/.ideavimrc'
+alias doomconf='emacs ~/.doom.d/config.el'
+alias quteconf='n ~/.qutebrowser/config.py'
+alias quteRallyconf='n ~/.qutebrowserRally/config/config.py'
+alias alaconf='n ~/.config/alacritty/alacritty.yml'
+alias gitconf='n ~/.gitconfig'
+alias tmuxconf='n ~/.tmux.conf'
+alias reactotronConf='n /Users/matkoson/Library/Application\ Support/Reactotron/config.json'
+alias yabaiconf='n /Users/matkoson/.config/yabai/yabairc'
+alias conf='cd ~/.config'
+alias zshconf='n ~/.zshrc'
+
+# tmux
+alias tmux='env TERM=screen-256color tmux'
+alias ta='tmux attach -t'
+alias tnr='tmux new -s rally'
+alias tnp='tmux new -s paper'
+
+alias doom='~/.emacs.d/bin/doom'
+alias e='emacs'
+alias f='fzf'
+alias r='ranger'
+alias l='ls -lah'
+alias sl=ls
+alias c='clear'
+alias s='source ~/.zshrc'
+alias h=heroku
+alias jj='pbpaste | jsonpp | pbcopy'
+alias rm=trash
+alias code=code-insiders
+alias l='colorls --group-directories-first --almost-all'
+alias ll='colorls --group-directories-first --almost-all --long'
+alias console='codi javascript'
+alias cat='bat'
+alias ctags="`brew --prefix`/bin/ctags"
+
+
+alias gvisited="git reflog | grep -o 'checkout: moving from .* to ' |\sed -e 's/checkout: moving from //' -e 's/ to $//' | head -20"
+alias gst='git status'
+alias gbh="git reflog | grep -o 'checkout: moving from .* to ' |\sed -e 's/checkout: moving from //' -e 's/ to $//' | head -20"
+alias gc='git commit'
+alias gco='git checkout'
+alias ga='git add'
+alias gd='git diff -w'
+alias gds='git diff -w --staged'
+alias gpr='git remote prune origin'
+alias ff='gpr && git pull --ff-only'
+alias gpull='git pull'
+alias gba='git branch --all'
+alias gb='git branch'
+alias gbb='git-switchbranch'
+alias gbf='git branch | head -1 | xargs' # top branch
+alias gbd='git branch -D'
+alias gcp='git cherry-pick'
+alias gl="git log --graph --format=format:'%C(bold blue)%h%C(reset) - %C(white)%s%C(reset) %C(bold magenta)%d%C(reset)'"
+alias gla="git log --all --graph --format=format:'%C(bold blue)%h%C(reset) - %C(white)%s%C(reset) %C(bold magenta)%d%C(reset)'"
+alias git-current-branch="git branch | grep \* | cut -d ' ' -f2"
+alias grd='dff && git rebase develop'
+alias gam='gc --amend -C HEAD'
+alias gp='git push'
+alias gpp='git pull && git push'
+alias gpf='git push --force-with-lease'
+alias git-current-branch="git branch | grep \* | cut -d ' ' -f2"
+alias gitUnstagePreviousCommit="git reset HEAD^"
+# FUNCTIONS -------------------------------------------------------------------
+function gcl {
+    gc -m "$(gl | head -1 | grep -o "A20-\d\d\d\d") $1"
+}
+
+function gg {
+    git branch | grep "$1" | head -1 | xargs git checkout
+}
+
+function take {
+    mkdir $1
+    cd $1
+}
+
+function unmount_all {
+    diskutil list |
+    grep external |
+    cut -d ' ' -f 1 |
+    while read file
+    do
+        diskutil unmountDisk "$file"
+    done
+}
+
+dff ()
+{
+    local curr_branch=`git-current-branch`
+    gco develop
+    ff
+    gco $curr_branch
+}
+
+
+JOBFILE="$HOME/bin/dotfiles/job-specific"
+if [ -f "$JOBFILE" ]; then
+    source "$JOBFILE"
+fi
+
+dclear () {
+    docker ps -a -q | xargs docker kill -f
+    docker ps -a -q | xargs docker rm -f
+    docker images | grep "service\|none" | awk '{print $3}' | xargs docker rmi -f
+}
+
+dreset () {
+    dclear
+    docker images -q | xargs docker rmi -f
+    docker volume rm $(docker volume ls |awk '{print $2}')
+    rm -rf ~/Library/Containers/com.docker.docker/Data/*
+    docker system prune -a
+}
+
+# kill used TCP port
+function killport() { lsof -i TCP:$1 | grep LISTEN | awk '{print $2}' | xargs kill -9 }
+
+function showPort(){
+netstat -vanp tcp | grep $1
+}
+
+# megazord stuff
+alias artiCli="yarn workspace @rally/uhc-mobile-artifact-encapsulator cli"
+
+# syncthing
+alias syncStop='brew services stop syncthing'
+alias syncStart='brew services start syncthing'
+
+# yabai
+alias ystop='brew services stop yabai'
+alias ystart='brew services start yabai'
+# yabai error log
+alias yelog='tail -f /usr/local/var/log/yabai/yabai.err.log'
+# yabai debug log
+alias ydlog='tail -f /usr/local/var/log/yabai/yabai.out.log'
+
+#pdf
+alias pdf='zathura'
+
+
+# React Native
+alias cWatchman='watchman watch-del-all'
+alias rn='react-native'
+alias rns='react-native start'
+alias rnlink='react-native link'
+alias rnland='react-native log-android'
+alias rnlios='react-native log-ios'
+alias rnand='react-native run-android'
+alias rnios='react-native run-ios'
+
+# iPhone
+alias rnios4s='react-native run-ios --simulator "iPhone 4s"'
+alias rnios5='react-native run-ios --simulator "iPhone 5"'
+alias rnios5s='react-native run-ios --simulator "iPhone 5s"'
+alias rnios6='react-native run-ios --simulator "iPhone 6"'
+alias rnios6p='react-native run-ios --simulator "iPhone 6 Plus"'
+alias rnios6s='react-native run-ios --simulator "iPhone 6s"'
+alias rnios6sp='react-native run-ios --simulator "iPhone 6s Plus"'
+alias rnios7='react-native run-ios --simulator "iPhone 7"'
+alias rnios7p='react-native run-ios --simulator "iPhone 7 Plus"'
+alias rnios8='react-native run-ios --simulator "iPhone 8"'
+alias rnios8p='react-native run-ios --simulator "iPhone 8 Plus"'
+alias rniosse='react-native run-ios --simulator "iPhone SE"'
+alias rniosx='react-native run-ios --simulator "iPhone X"'
+alias rniosxs='react-native run-ios --simulator "iPhone Xs"'
+alias rniosxsm='react-native run-ios --simulator "iPhone Xs Max"'
+alias rniosxr='react-native run-ios --simulator "iPhone X Ä"'
+alias rnios11='react-native run-ios --simulator "iPhone 11"'
+alias rnios11p='react-native run-ios --simulator "iPhone 11 Pro"'
+alias rnios11pm='react-native run-ios --simulator "iPhone 11 Pro Max"'
+alias rnios12='react-native run-ios --simulator "iPhone 12"'
+alias rnios12p='react-native run-ios --simulator "iPhone 12 Pro"'
+alias rnios12pm='react-native run-ios --simulator "iPhone 12 Pro Max"'
+
+
+# iPad
+alias rnipad2='react-native run-ios --simulator "iPad 2"'
+alias rnipad5='react-native run-ios --simulator "iPad (5th generation)"'
+alias rnipad6='react-native run-ios --simulator "iPad (6th generation)"'
+alias rnipadr='react-native run-ios --simulator "iPad Retina"'
+alias rnipada='react-native run-ios --simulator "iPad Air"'
+alias rnipada2='react-native run-ios --simulator "iPad Air 2"'
+alias rnipada3='react-native run-ios --simulator "iPad Air (3rd generation)"'
+alias rnipadm2='react-native run-ios --simulator "iPad mini 2"'
+alias rnipadm3='react-native run-ios --simulator "iPad mini 3"'
+alias rnipadm4='react-native run-ios --simulator "iPad mini 4"'
+alias rnipadm5='react-native run-ios --simulator "iPad mini (5th generation)"'
+alias rnipadp9='react-native run-ios --simulator "iPad Pro (9.7-inch)"'
+alias rnipadp12='react-native run-ios --simulator "iPad Pro (12.9-inch)"'
+alias rnipadp122='react-native run-ios --simulator "iPad Pro (12.9-inch) (2nd generation)"'
+alias rnipadp10='react-native run-ios --simulator "iPad Pro (10.5-inch)"'
+alias rnipad11='react-native run-ios --simulator "iPad Pro (11-inch)"'
+alias rnipad123='react-native run-ios --simulator "iPad Pro (12.9-inch) (3rd generation)"'
+
+# Apple TV
+alias rnatv='react-native run-ios --simulator "Apple TV"'
+alias rnatv4k='react-native run-ios --simulator "Apple TV 4K"'
+alias rnatv4k1080='react-native run-ios --simulator "Apple TV 4K (at 1080p)"'
+
+# Apple Watch
+alias rnaw38='react-native run-ios --simulator "Apple Watch - 38mm"'
+alias rnaw42='react-native run-ios --simulator "Apple Watch - 42mm"'
+alias rnaws238='react-native run-ios --simulator "Apple Watch Series 2 - 38mm"'
+alias rnaws242='react-native run-ios --simulator "Apple Watch Series 2 - 42mm"'
+alias rnaws338='react-native run-ios --simulator "Apple Watch Series 3 - 38mm"'
+alias rnaws342='react-native run-ios --simulator "Apple Watch Series 3 - 42mm"'
+alias rnaws440='react-native run-ios --simulator "Apple Watch Series 4 - 40mm"'
+alias rnaws444='react-native run-ios --simulator "Apple Watch Series 4 - 44mm"'
+
+# ideaConfig
+alias upIdea='cd $DEV_DIR/repos/mobile/vaccine-passport/.idea && cp -r * ~/dev/configFiles/workingIdeaConfig'
+
+VP_LOC="$DEV_DIR/repos/mobile/vaccine-passport"
+DOT_IDEA="$VP_LOC/.idea"
+
+alias restoreIdea='cd $VP_LOC && rm -rf .idea && mkdir .idea &&  cd $DEV_DIR/configFiles/workingIdeaConfig && cp -r * $DOT_IDEA'
+
+# show directory tree
+alias ctree='find .'
+
+# brownfield/codegen dev loop
+alias feed='ycp && replaceCodegen && gen'
+alias res='cg && yarn clean && yarn build && yarn start'
+
+
+# generate random string
+alias genRandom='date +%s | sha256sum | base64 | head -c 32'
+alias syncIcloud='forceIcloudSync.sh'
+alias syncIcloud10Interval='runScriptInSecInterval.sh forceIcloudSync.sh 10'
+alias syncOmniAutomation5='runScriptInSecInterval.sh syncOmniAutomation.sh 5'
+alias syncOmniAutomationOnce='syncOmniAutomation.sh'
+
+
+# clear NVRAM - it works as expected despite the `nvram: Error clearing firmware variables: (iokit/common) not permitted` error message
+alias clearNvram='sudo nvram -c'
+
+# how to test wheteher NVRAM has been cleared, despite the fact the above command seemingly fails
+## $ sudo nvram TestVar=HelloWorld
+## $ sudo nvram -p | grep 'TestVar'
+## TestVar HelloWorld
+## $ sudo nvram -c
+## nvram: Error clearing firmware variables: (iokit/common) not permitted
+## $ sudo nvram -p | grep 'TestVar'
+## $
+
+# maclock - bash script for controlling mac sleep/displayOff etc.
+alias maclock="maclock.sh --mute --quiet"
+
+# config loc
+alias dots=$DEV_DIR/repos/configs/dotfiles
+
+# config bare repo
+alias config='/usr/bin/git --git-dir=$HOME/.cfg/.git/ --work-tree=$HOME'
+

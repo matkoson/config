@@ -1,0 +1,8 @@
+# Insert your preferred key mappings here.
+map p togglePinTab
+map cd closeOtherTabs
+map h moveTabLeft
+map l moveTabRight
+map U restoreTab
+map <c-k> nextTab
+map <c-j> previousTab
